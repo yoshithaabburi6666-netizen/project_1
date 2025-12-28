@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Access Portal</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        
+        .hero-section {
+            height: 100vh;
+            width: 100%;
+            /* Replace with one of the generated landscape URLs if preferred */
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* 2. Content Box with Blur and Animation */
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* 3. Heading Animation (Glowing Text) */
+        h2 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00d2ff, 0 0 20px #3a7bd5;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: #e0e0e0;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        /* 4. Animated Gradient Button */
+        .gradient-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            background-size: 200% auto;
+            border-radius: 50px;
+            transition: 0.5s;
+            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-btn:hover {
+            background-position: right center; /* Moves the gradient */
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff, 0 0 20px #00d2ff; }
+            to { text-shadow: 0 0 20px #fff, 0 0 40px #3a7bd5; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="content-box">
+            <h2>THIS IS FOR YOU..........</h2>
+            <h3>Bangaruuu </h3>
+            
+            <a class="gradient-btn" href="image.html">Click Me</a>
+        </div>
+    </div>
+
+    <script>/*
+        (function(){
+            const btn = document.getElementById('actionBtn');
+            const h2 = document.querySelector('.content-box h2');
+            const h3 = document.querySelector('.content-box h3');
+            const contentBox = document.querySelector('.content-box');
+            let toggled = false;
+
+            btn.addEventListener('click', function(){
+                if(!toggled){
+                    h2.textContent = 'Clicked — Modified!';
+                    h3.textContent = 'Last clicked: ' + new Date().toLocaleString();
+                    btn.textContent = 'Undo';
+                    contentBox.style.transform = 'scale(1.03)';
+                    contentBox.style.transition = 'transform 200ms ease';
+                    toggled = true;
+                } else {bject-fit: cover;
+                    h2.textContent = 'THIS IS FOR YOU..........';
+                    h3.textContent = 'Bangaruuu';
+                    btn.textContent = 'Click Me';
+                    contentBox.style.transform = '';
+                    toggled = false;
+                }
+            });id="actionBtn" class="gradient-btn"
+        })();*/
+    </script>
+
+</body>
+</html>
